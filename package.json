@@ -1,0 +1,25 @@
+{
+  "name": "gulpjs-study",
+  "version": "1.0.0",
+  "description": "This repository is a collection of code written by studying Gulp.js.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangumee/GulpJS-Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sangumee/GulpJS-Study/issues"
+  },
+  "homepage": "https://github.com/sangumee/GulpJS-Study#readme"
+}
