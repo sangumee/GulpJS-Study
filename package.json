@@ -4,9 +4,10 @@
   "description": "This repository is a collection of code written by studying Gulp.js.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-sass": "^4.0.1",
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0"
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {

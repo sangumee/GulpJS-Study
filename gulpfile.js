@@ -1,22 +1,21 @@
-var gulp=require('gulp');
-import sass, { logError } from 'gulp-sass';
-import autoprefixer from 'gulp-autoprefixer';
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
+browserSync.init({
+    server: "./"
+});
+browserSync.stream(); // 
 
-let browserSync = require('browser-sync').create();
- browserSync.init({
-     server: "./"
- });
- browserSync.stream();
-
-task('default', function () {
+gulp.task('default', function () {
     console.log('Hello Gulp!');
 });
 
-task('styles', function () {
-    src('sass/**/*.scss')
-        .pipe(sass().on('error', logError))
+gulp.task('styles', function () {
+    gulp.src('sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
-        .pipe(dest('./css'))
+        .pipe(gulp.dest('./css'))
 });
