@@ -31,5 +31,5 @@ gulp.task('styles', function () {
 			browsers: ['last 2 versions']
 		}))
 		.pipe(gulp.dest('./css'));
-		browserSync.stream(); // 
+		.pipe(browserSync.stream());
 });
